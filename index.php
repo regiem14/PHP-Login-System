@@ -73,6 +73,12 @@
             echo "<br>";
             echo "<p>This is another <b> that got displayer php tags.</b></p>";
         ?>
+
+        <?php
+            echo "Print statement can be used with or without ()";
+            print "Hello World! <br>";
+            print "This is an example of a print statement to display output on the browser";
+        ?>
     </section>
 
     <hr>
@@ -150,6 +156,27 @@
         if ("10" == 10){
             echo "This is not the same data type!";
         }
+    ?>
+
+    <hr>
+    <h2>Float Data Type</h2>
+    <?php 
+        echo 24.5;
+        echo "<br>";
+        echo 10.35;
+        echo "<br>";
+        echo 1000.12345;
+
+        echo "In PHP we don't need any extra keywords in defining float data types: "  . 20.5;
+        echo "<br>";
+        echo "Unlike with C# we neet define a float: " . '20.5f';
+    ?>
+
+    <hr>
+    <h2> Adding Line Breaks</h2>
+    <?php echo "if you view the page source \n you'll find a new line in this string";
+    ?>
+    <?php echo nl2br("if you view the page source \n you'll find a new line in this string");
     ?>
     </section>
     
