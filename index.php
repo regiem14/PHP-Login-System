@@ -13,7 +13,9 @@
     <header>
         <div class="header">
             <?php
-            echo "My first PHP Script";
+            echo "My first PHP Script with single quoutes";
+            echo '<br>';
+            echo "My third PHP Script with single quoutes";
              ?>
         </div>
     </header>
@@ -50,6 +52,16 @@
         <li>Can perform CRUD - Create, Read, Updated, and Delete</li>
         <li>Setup control user-access</li>
         <li>Encrypt data</li>
+    </section>
+
+    <br>
+    <br>
+    <section>
+        <h2>Two basic ways to get output</h2>
+        <ul>
+            <li>echo statement</li>
+            <li>print statement</li>
+        </ul>    
     </section>
     
 
