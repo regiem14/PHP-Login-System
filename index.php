@@ -178,6 +178,15 @@
     ?>
     <?php echo nl2br("if you view the page source \n you'll find a new line in this string");
     ?>
+    
+    <hr>
+    <h2>Boolean</h2>
+    <?php
+    $a = true;
+    if($a === true){
+        echo "Variable A is equal to true";
+    }
+    ?>
     </section>
     
 
