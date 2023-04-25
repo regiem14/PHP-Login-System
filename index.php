@@ -95,6 +95,35 @@
         <?php }?>
     </section>
     
+    <section>
+        <h2>Scalar data types</h2>
+        <strong>Data Types</strong>
+
+        <h3>12 Primitive Data Types</h3>
+        <ul>
+            <li>Strings</li>
+            <li>Integers</li>
+            <li>Floats</li>
+            <li>Boolean</li>
+        </ul>
+
+        <h3>Compound</h3>
+        <ul>
+            <li>Array</li>
+            <li>Object</li>
+            <li>Callable</li>
+            <li>Iterable</li>
+        </ul>
+
+        <h2>Special</h2>
+        <ul>
+            <li>Resource</li>
+            <li>Null</li>
+        </ul>
+
+        <h2>Pseudo-Types</h2>
+        
+    </section>
 
     <div id="mydiv"></div>
 ​
