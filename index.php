@@ -54,14 +54,45 @@
         <li>Encrypt data</li>
     </section>
 
-    <br>
-    <br>
+    <hr>
+    <hr>
     <section>
         <h2>Two basic ways to get output</h2>
         <ul>
             <li>echo statement</li>
             <li>print statement</li>
         </ul>    
+        <p>
+            Hi, this is a paragraph content inside a paragraph element
+        </p>
+        <?php 
+            echo "Hello World, I'm Regie!";
+            echo "<br>";
+            echo "This is also a paragraph inside of element tag";
+            echo "<br>";
+            echo "<br>";
+            echo "<p>This is another <b> that got displayer php tags.</b></p>";
+        ?>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>Without escaping</h2>
+        <?php 
+        if(1 == 1){
+            echo "<p>This works alright with an if statement!</p>";
+        }
+        ?>
+        
+        <h2>With escaping</h2>
+        <?php 
+         if(1 == 1) { 
+        ?>
+
+        <p>This should work wiht the implement of the concept of escaping PHP!</p>
+        
+        <?php }?>
     </section>
     
 
