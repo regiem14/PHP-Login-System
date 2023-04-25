@@ -220,12 +220,114 @@
     echo "<br>";
     $float = 1.1416;
     echo "The float Number is " . $float;
+    
+    echo "<hr>";
+    echo "<h2>Constants In PHP</h2>";
+    
+    CONST PI = 3.14;
+    CONST BALL_HEIGHT = 5;
+    CONST BALL_WIDTH = 5;
+    
+    echo PI;
+    echo "<br>";
+    echo "The ball width is " . BALL_WIDTH;
+    echo "<br>";
+    echo "The ball height is " . BALL_HEIGHT;
+
+    CONST PLAYER_HEIGHT = 5;
     ?>
     </section>
     
+    <section>
+        <h2>Expressions in PHP</h2>
+        <ul>
+            <li>Operators</li>
+            <li>Conditions</li>
+            <li>Loops</li>
+        </ul>
+
+        <hr>
+        <h2>Operators</h2>
+        <li>Arithmatic Operators</li>
+        <li>Assignment Operator</li>
+        <li>Comparison Operator</li>
+        <li>Increment/Decrement Operators</li>
+        <li>Logical Operators</li>
+        <li>String Operators</li>
+        <li>Array Operator</li>
+        <li>Conditional Assignment Operator</li>
+        <li>Operator Precedence</li>
+        <li>Error Control Operators</li>
+        <li>Execution Control Operators</li>
+        <li>Type Operators</li>
+        <li>Bitwise Operator</li>
+
+        <hr>
+        <?php 
+        $num1 = 1;
+        $num2 = 2;
+        $sum;
+        $product;
+        $difference;
+        $quotient;
+
+        echo "<h3>Arithmetic Operators</h3>";
+        $sum = $num1 + $num2;
+        echo $sum;
+        echo "<br>";
+
+        $product = $num1 * $num2;
+        echo $product;
+        echo "<br>";
+
+        $difference = $num1 - $num2;
+        echo $difference;
+        echo "<br>";
+
+        $quotient = $num1 / $num2;
+        echo $quotient;
+        ?>
+
+        <?php
+        echo "<h3>Assignment Operators</h3>";
+        echo "<h4>Compoudning assignment with augment</h4>";
+        
+        // $num1 += $num2;
+
+        echo $num1;
+        echo "<br>";
+        $num1 = $num1 + $num2;
+        print $num1;
+        ?>
+
+        <?php 
+        echo "<h3>Comparison Operatos</h3>";
+
+        $num1 == $num2;
+        $num1 === $num2;
+        $num1 !== $num2;
+        $num1 < $num2;
+        $num1 > $num2;
+        $num1 <= $num2;
+        $num1 >= $num2;
+        $num1 <=> $num2;
+        ?>
+
+        <?php
+        $num1 = 1;
+        $num2 = "2";
+        $num1 == $num2;
+        $num1 === $num2;
+        ?>
+    </section>
 
     <div id="mydiv"></div>
 ​
+    <script>
+        const PLAYER_SPEED = 10;
+      console.log(PLAYER_SPEED);
+    </script>
+
     <script type="text/babel">
       function Hello() {
         return <h1>Hello World! This is example of REACT embedded on a php file</h1>;
