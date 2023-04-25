@@ -209,7 +209,17 @@
     $name = "Grey";
     echo "I am " . $name;
 
+    echo "<br>";
+    $number = 14;
+    echo "My favorite number is " . $number;
     
+    echo "<br>";
+    $a = true;
+    echo "The boolean value is " . $a;
+
+    echo "<br>";
+    $float = 1.1416;
+    echo "The float Number is " . $float;
     ?>
     </section>
     
