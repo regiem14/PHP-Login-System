@@ -200,6 +200,17 @@
     echo "<li>A variable name can only have alphanumeric characters</li>";
     echo "</ul>";
     ?>
+
+    <hr>
+    <?php 
+    print "<h2>Coding Challenge for Variables</h2>";
+
+    echo "<p>Declare a variable and assign value of string data type</p>";
+    $name = "Grey";
+    echo "I am " . $name;
+
+    
+    ?>
     </section>
     
 
