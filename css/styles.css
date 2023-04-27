@@ -20,6 +20,11 @@ body{
     background-color: lightcyan;
 }
 
+.functions{
+    height: 100vh;
+}
+
+
 footer{
     height: 20vh;
     background-color: black;

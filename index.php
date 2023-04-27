@@ -8,6 +8,13 @@
 
     <main>
     <section>
+        
+        <?php
+            echo "My first PHP Script with single quoutes";
+            echo '<br>';
+            echo "My third PHP Script with single quoutes";
+        ?>
+        
         <h2>React Section</h2>
         <div class="mydiv"></div>
     </section>

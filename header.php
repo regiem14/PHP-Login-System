@@ -15,6 +15,10 @@
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script></head>
 <body>
+
+<header>
+<div class="header">
+
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Navbar</a>
@@ -34,7 +38,7 @@
             Dropdown
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="functions.php">Functions</a></li>
             <li><a class="dropdown-item" href="#">Another action</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="#">Something else here</a></li>
@@ -51,15 +55,8 @@
     </div>
   </div>
 </nav>
-
-    <header>
-        <div class="header">
-        <?php
-            echo "My first PHP Script with single quoutes";
-            echo '<br>';
-            echo "My third PHP Script with single quoutes";
-        ?>
-        </div>
-    </header>
+        
+</div>
+</header>
 </body>
 </html>
