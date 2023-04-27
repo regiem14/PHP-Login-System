@@ -12,11 +12,11 @@
 <body>
     <header>
         <div class="header">
-            <?php
+        <?php
             echo "My first PHP Script with single quoutes";
             echo '<br>';
             echo "My third PHP Script with single quoutes";
-             ?>
+        ?>
         </div>
     </header>
 
@@ -86,17 +86,17 @@
     <section>
         <h2>Without escaping</h2>
         <?php 
-        if(1 == 1){
-            echo "<p>This works alright with an if statement!</p>";
-        }
+            if(1 == 1){
+                echo "<p>This works alright with an if statement!</p>";
+            }
         ?>
         
         <h2>With escaping</h2>
         <?php 
-         if(1 == 1) { 
-        ?>
+            if(1 == 1) { 
+            ?>
 
-        <p>This should work wiht the implement of the concept of escaping PHP!</p>
+            <p>This should work wiht the implement of the concept of escaping PHP!</p>
         
         <?php }?>
     </section>
@@ -182,59 +182,59 @@
     <hr>
     <h2>Boolean</h2>
     <?php
-    $a = true;
-    if($a === true){
-        echo "Variable A is equal to true";
-    }
+        $a = true;
+        if($a === true){
+            echo "Variable A is equal to true";
+        }
     ?>
 
     <hr>
     <h2>Declaring Variables</h2>
     <?php 
-    echo "<h3>Rules in declaring variables</h3>";
-    echo "<ul>";
-    echo "<li>Don't start your variable name with a number</li>";
-    echo "<li>A vabriable name can start with a letter and an underscore</li>";
-    echo "<li>It cannot start with a number</li>";
-    echo "<li>It is Case Sensitive</li>";
-    echo "<li>A variable name can only have alphanumeric characters</li>";
-    echo "</ul>";
+        echo "<h3>Rules in declaring variables</h3>";
+        echo "<ul>";
+        echo "<li>Don't start your variable name with a number</li>";
+        echo "<li>A vabriable name can start with a letter and an underscore</li>";
+        echo "<li>It cannot start with a number</li>";
+        echo "<li>It is Case Sensitive</li>";
+        echo "<li>A variable name can only have alphanumeric characters</li>";
+        echo "</ul>";
     ?>
 
     <hr>
     <?php 
-    print "<h2>Coding Challenge for Variables</h2>";
+        print "<h2>Coding Challenge for Variables</h2>";
 
-    echo "<p>Declare a variable and assign value of string data type</p>";
-    $name = "Grey";
-    echo "I am " . $name;
+        echo "<p>Declare a variable and assign value of string data type</p>";
+        $name = "Grey";
+        echo "I am " . $name;
 
-    echo "<br>";
-    $number = 14;
-    echo "My favorite number is " . $number;
+        echo "<br>";
+        $number = 14;
+        echo "My favorite number is " . $number;
     
-    echo "<br>";
-    $a = true;
-    echo "The boolean value is " . $a;
+        echo "<br>";
+        $a = true;
+        echo "The boolean value is " . $a;
 
-    echo "<br>";
-    $float = 1.1416;
-    echo "The float Number is " . $float;
+        echo "<br>";
+        $float = 1.1416;
+        echo "The float Number is " . $float;
     
-    echo "<hr>";
-    echo "<h2>Constants In PHP</h2>";
+        echo "<hr>";
+        echo "<h2>Constants In PHP</h2>";
     
-    CONST PI = 3.14;
-    CONST BALL_HEIGHT = 5;
-    CONST BALL_WIDTH = 5;
+        CONST PI = 3.14;
+        CONST BALL_HEIGHT = 5;
+        CONST BALL_WIDTH = 5;
     
-    echo PI;
-    echo "<br>";
-    echo "The ball width is " . BALL_WIDTH;
-    echo "<br>";
-    echo "The ball height is " . BALL_HEIGHT;
+        echo PI;
+        echo "<br>";
+        echo "The ball width is " . BALL_WIDTH;
+        echo "<br>";
+        echo "The ball height is " . BALL_HEIGHT;
 
-    CONST PLAYER_HEIGHT = 5;
+        CONST PLAYER_HEIGHT = 5;
     ?>
     </section>
     
@@ -263,7 +263,7 @@
         <li>Bitwise Operator</li>
 
         <hr>
-        <?php 
+    <?php 
         $num1 = 1;
         $num2 = 2;
         $sum;
@@ -286,9 +286,9 @@
 
         $quotient = $num1 / $num2;
         echo $quotient;
-        ?>
+    ?>
 
-        <?php
+    <?php
         echo "<h3>Assignment Operators</h3>";
         echo "<h4>Compoudning assignment with augment</h4>";
         
@@ -298,26 +298,408 @@
         echo "<br>";
         $num1 = $num1 + $num2;
         print $num1;
-        ?>
+    ?>
 
-        <?php 
+    <?php 
         echo "<h3>Comparison Operatos</h3>";
 
         $num1 == $num2;
         $num1 === $num2;
+        $num1 != $num2;
         $num1 !== $num2;
         $num1 < $num2;
         $num1 > $num2;
         $num1 <= $num2;
         $num1 >= $num2;
         $num1 <=> $num2;
-        ?>
+    ?>
 
-        <?php
+    <?php
         $num1 = 1;
         $num2 = "2";
-        $num1 == $num2;
-        $num1 === $num2;
+        // $num1 == $num2;
+        // $num1 === $num2;
+        echo "Variable \$num1 is an example of an integer";
+        echo "<br>";
+        echo gettype($num1);
+        echo "<br>";
+        echo "Variable \$num2 is an example of a string";
+        echo "<br>";
+        echo gettype($num2);
+        echo "<br>";
+
+        echo "<p>\$num1 with an assigned value of 1, is not equal to \$num2 with assigned value of '1'</p>";
+        if($num1 != $num2){
+            echo "This is printed after an if statement as an example of comparing two data types that are not equal to one another";
+        }
+
+        $num3 = "1";
+        $num4 = 4;
+        $num5 = "4";
+        
+        echo gettype($num4);
+        echo gettype($num5);
+        echo "<br>";
+        echo "<br>";
+        
+        if($num4 != $num5){
+            echo "This will not be printed out.";
+        }else{
+            echo "This gets printed because num4 and num5 are not equal to one another.";
+        }
+        
+        $num6 = 4;
+        echo "<br>";
+        echo "<br>";
+        echo "<br>";
+        echo "<br>";
+
+        echo "<hr>";
+
+        
+        echo "<h3>Greater than or less than comparison operator</h3>";
+
+        $num1 = 1;
+        $num2 = 2;
+        $num3 = 3;
+        $num4 = 4;
+        $num5 = 5;
+        $num6 = 5;
+
+        if ($num1 < $num2){
+            echo "num1 is less than num2";
+        }
+        
+        echo "<br>";
+        
+        if ($num3 <= $num4){
+            echo "num3 is less than or equal to num4";
+        }
+        
+        echo "<br>";
+        
+        if ($num5 >= $num6){
+            echo "num5 is greater than or equal to num6";
+        }
+
+        
+        echo "<h3>Spaceschip comparison operators</h3>";
+
+        $num1 = 1;
+        $num2 = 3;
+        $num3 = 3;
+
+        if($num1 <=> $num2){
+            print "If the one on the right is greater than the number on the left this should return -1";
+        };
+
+        echo "<br>";
+        echo "<br>";
+
+     /*   print($num2<=>$num3);
+        if($num2 <=> $num3){
+            print "if both numbers are equal to one another this should return 0.";
+        };*/
+
+        echo "<br>";
+        echo "<br>";
+        echo $num2 <=> $num3;
+
+        echo "<br>";
+        echo "<br>";
+        echo $num2 <=> $num1;
+        
+        echo "<hr>";
+        
+        
+        echo "<h3>Logical Operators : Logical <b>and &&</b></h3>";
+        
+        $num1 = 5;
+        $num2 = 10;
+
+        if($num1 === 5 and  $num2 ===10){
+            echo "This is the <b>and</b> operator in action";
+            echo "<br>";
+        }
+
+
+        if($num1 === 5 && $num2 ===10){
+            echo "This is the <b>&&</b> shortband for the and operator in action";
+            echo "<br>";
+        }
+
+        echo "<h3>Logicla Operator : Logical <b>or ||</b></h3>";
+
+        if($num1 === 5 OR  $num2 ===1){
+            echo "This is the <b>OR</b> operator in action";
+            echo "<br>";
+        }
+
+        if($num1 === 1 || $num2 ===10){
+            echo "This is the <b>&&</b> shortband for the and operator in action";
+            echo "<br>";
+        }
+
+
+        echo "<h3>Locigal Operators : Logical <b>XOR</b></h3>";
+
+        $num1 = 10;
+        $num2 = 20;
+        $num3 = 5;
+        $num5 = 6;
+
+        if ($num1 === 10 XOR $num2 ===20){
+            $result = $num1 === 10 xor
+            $num2 ===5;
+            echo "<br>";
+            echo "<br>";
+
+            echo "true xor false";
+            echo "<br>";
+
+            echo "If one of these value are true display this text.";
+            echo "<br>";
+            echo $result ? "true" : "false";
+        }
+
+        echo "<h3>Logical Operators : <b>NOT EQUAL</b></h3>";
+
+        $num1 = 100;
+
+        var_dump($num1 !== 100);
+        echo "<br>";
+        var_dump($num1);
+
+        echo "<br>";
+        echo "<br>";
+
+        echo "<hr>";
+
+        echo "<h2>Increment and Decrement</h2>";
+
+        $num1 = 9;
+       /* $num1++;
+        ++$num1;
+
+        var_dump($num1++);
+        var_dump(++$num1);*/
+
+        ++$num1;
+        var_dump(++$num1);
+
+        $num1 = 9;
+        $num1--;
+        var_dump($num1--);
+
+        
+        echo "<hr>";
+
+        echo "<h2>String Operators</h2>";
+
+        $a = "My name ";
+        $b = "is Regie.";
+        $c = $a . $b;
+        echo $a;
+        
+        echo "<br>";
+        echo "<br>";
+        echo $b;
+
+        echo "<br>";
+        echo "<br>";
+        echo $c;
+
+        echo "<br>";
+        $g = "others name is ";
+        $h = $g . 'Amey.';
+        echo $h;
+    ?>
+    </section>
+
+    <hr>
+    <section>
+    <h2>Control Structure</h2>
+    
+    <?php 
+        echo "<h3>Conditional Statements</h3>";
+
+        echo "<h4>If Conditional Statements</h4>";
+
+        echo "if(condition>{";
+        echo "<br>";
+        echo "//code";
+        echo "<br>";
+        echo "};";
+        echo "<br>";
+        echo "<br>";
+
+
+        $a = 20;
+        $b = 5;
+
+        if($a === $b){
+            echo "Variable \$a is the same value with variable \$b";
+        }elseif($b === 5){
+            echo "Variable \$b is equal to 10";
+        }else{
+            echo "They are Not the same";
+        }
+        
+
+        echo "<h3>Switch Conditional Statements</h3>";
+
+        $a = 50;
+        switch($a){
+            case 50:
+            echo "Variable is equal to 20.";
+            break;
+            case 100:
+                echo "Variable is equal to 100.";
+                break;
+            default:
+            echo "Did not find the equal value";
+        }
+
+        echo "<br>";
+        $a = true;
+
+        if($a == true){
+            echo "variable is true";
+        }
+
+        elseif($a === false){
+            echo "varaible is false";
+        }
+
+        echo "<br>";
+        echo "<h4>Loops</h4>";
+    
+        $a = 20;
+        $b = 20;
+
+        if($a === $b){
+            echo "These values aret the same";
+        }
+    
+        echo "<hr>";
+        echo "<h4>While Loops</h4>";
+    
+        $a = 0;
+        $b = 10;
+
+        while ($a    < $b){
+            $a++;
+            echo "Keep looping this!";
+            echo "<br>";
+        }
+
+        echo "<br>";
+        echo "<br>";
+        echo "<h4>Infinite Loop<pan style='color: red'>This is Bad!</h4>";
+
+        echo "while (true === true{";
+        echo "<br>";
+        echo "echo 'This will continuou to run Forever.' <span style='color: red'>Don't do This!</span>";
+        echo "<br>";
+        echo "}";
+
+        echo "<hr>";
+        echo "<h4>Do While Loops</h4>";
+
+        $a = 0;
+
+        do {
+            echo "loop number" . $a++;
+            echo "<br>";
+        }while ($a <= 10);
+
+        while ($a <= 5){
+            $a++;
+            echo "Keep lopping this";
+            echo "<br>";
+            echo "<br>";
+        }
+    
+    
+        echo "<br>";
+
+        echo "<h4>For Loops</h4>";
+    
+        for ($i=0; $i < 10;
+        $i++){
+            echo "This should run 10 times";
+            echo "<br>";
+        }
+
+    
+        echo "<br>";
+        $array = ["Egy", "Amey", "Grey", "Syndra", "Tax", "Ran", "Eight"];
+    
+        echo "<hr>";
+        echo "<h4>Foreach Loops</h4>";
+    
+        foreach($array as $value){
+            echo $value;
+            echo "<br>";
+        };
+
+
+        echo "<br>";
+        echo "<br>";
+            $person = [
+                "First Name" => "Regie",
+                "Last Name" => "Marzan",
+                "Eye Color" => "Brwon"
+            ];
+
+            foreach($person as $key => $value){
+                echo $key . ": " . $value;
+                echo "<br>";
+            }
+
+        ?>
+    </section>
+    
+    <hr>
+    <section>
+        <?php 
+        echo "<h2>Break and Continou Statements</h2>";
+
+        $a = 1;
+
+        while ($a <= 10){
+            if($a === 7){
+                break;
+            }
+            echo $a++;
+            echo "<br>";
+        }
+
+
+        echo "<h3>Hested While Loop</h3>";
+        echo "<br>";
+        $a = 1;
+
+        while ($a++){
+            echo $a;
+            while ($a >= 10){
+                break 2;
+            }
+            echo "<br>";
+        }
+
+        echo "<br>";
+        echo "<h2>Continue Statements</h2>";
+        $a = 0;
+
+        while ($a < 10){
+            $a++;
+            if ($a === 5){
+                continue;
+            }
+            echo $a;
+            echo "<br>";
+        }
         ?>
     </section>
 
