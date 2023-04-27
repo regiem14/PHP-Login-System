@@ -5,11 +5,24 @@
 }
 
 body{
-    margin: 5%;
-    padding: 2rem;
+    /* margin: 5%;
+    padding: 2rem; */
     background-color: lightgreen;
+    text-align: center;
 }
 
-.header{
+/* .header{
     height: 50vh;
+} */
+
+.about{
+    height: 100vh;
+    background-color: lightcyan;
+}
+
+footer{
+    height: 20vh;
+    background-color: black;
+    color: white;
+    text-align: center;
 }

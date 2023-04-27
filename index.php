@@ -1,25 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>REGIE FIRST PHP SERVER</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
-    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script></head>
-<body>
-    <header>
-        <div class="header">
-        <?php
-            echo "My first PHP Script with single quoutes";
-            echo '<br>';
-            echo "My third PHP Script with single quoutes";
-        ?>
-        </div>
-    </header>
+<?php 
+    // include 'includes/test2.php';
+    include_once 'header.php';
+    require 'test.php';
+    // require_once 'test.php';
+?>
 
+
+    <main>
     <section>
         <h2>React Section</h2>
         <div class="mydiv"></div>
@@ -703,21 +690,19 @@
         ?>
     </section>
 
-    <div id="mydiv"></div>
-​
-    <script>
-        const PLAYER_SPEED = 10;
-      console.log(PLAYER_SPEED);
-    </script>
+    <section>
+        <h2>Include and Require</h2>
+        <?php 
+            include 'includes/test2.php';
+            
+            echo "<br>";
 
-    <script type="text/babel">
-      function Hello() {
-        return <h1>Hello World! This is example of REACT embedded on a php file</h1>;
-      }
-      
-      const container = document.getElementById('mydiv');
-      const root = ReactDOM.createRoot(container);
-      root.render(<Hello />)
-    </script>    
-</body>
-</html>
+            echo $banana;
+        ?>
+        
+    </section>
+    </main>
+    
+    <?php 
+        include_once 'footer.php'
+    ?>
