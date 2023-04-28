@@ -1,12 +1,12 @@
 <?php 
-    function calculateAdd($num1, $operatoins, $num2){
-        $sum;
+    function calculateFunc($num1, $operatoins, $num2){
+        $result;
         switch($operatoins){
             case "add";
-                $sum = $num1 + $num2;
+                $result = $num1 + $num2;
                 break;
             case "subtract";
-                $sum = $num1 + $num2;
+                $result = $num1 + $num2;
                 break;
             default; 
             $result = "Output Error";
@@ -15,4 +15,9 @@
 
         return $result;
     }
-?>
+
+$num1 = $_GET["num1"];
+$operatoins = $_GET["operations"];
+$num2 = $_GET["num2"];
+
+echo "Calculated Value: " . calculateFunc($num1, $operatoins, $num2);
