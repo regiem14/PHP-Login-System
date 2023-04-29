@@ -37,21 +37,28 @@
         <li>Display things on the website.</li>
     </ol>
 
+    <h2>FirstClass example from includes folder</h2>
+    <?php
+    echo "<hr>";
+    echo "<h2>FirstClass Examples</h2>";
+    echo "<br>";
+    include_once 'includes/FirstClass.php';
+    ?>
+
     
+    <?php 
+        class Fruit{
+            public $name;
+            public $color;
 
-        <?php 
-            class Fruit{
-                public $name;
-                public $color;
-
-                function setName($name){
-                    $this->name= $name;
-                }
-
-                function getName(){
-                    return $this->name;
-                }
+            function setName($name){
+                $this->name= $name;
             }
+
+            function getName(){
+                return $this->name;
+            }
+        }
 
         $apple = new Fruit();
         $banana = new Fruit();
@@ -61,7 +68,7 @@
         echo $apple->getName();
         echo "<br>";
         echo $banana->getName();
-        ?>
+    ?>
     
 
 <!-- <script>
