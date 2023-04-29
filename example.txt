@@ -1,0 +1,26 @@
+
+        <?php
+            Controller.php;
+            Model.php;
+            View.php;
+        <?
+            Controller.php
+        ?>
+
+        <?
+            Controller.php
+        ?>
+
+        <?
+            Model.php
+        ?>
+        
+        <?
+            View.php
+        ?>
+
+        <?php
+            class Fruit{
+
+            }
+        ?>
