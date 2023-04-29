@@ -24,3 +24,18 @@
 
             }
         ?>
+        
+        //Abstraction
+
+        // Not Abstracted 
+        function testAPI(type){
+            //implementation example
+        }else if(type instaceof initialLoad){
+            //implementation example
+        }else{
+            //implementation example
+        }
+
+        //Abstraction
+
+        testAPI('www.test.com', HTTPMethod.Get); //Invocation
