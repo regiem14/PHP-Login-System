@@ -85,7 +85,7 @@
     
     <h3>Coding Challange</h3>
     <?php
-    
+        include_once 'includes/Construct.php';
     ?>
 </body>
 </html>
