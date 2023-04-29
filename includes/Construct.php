@@ -13,5 +13,5 @@ class App{
 
 }
 
-$CM = new App('CM');
-$golden = new App('golden');
+$CM = new App('CM' ,'golden');
+// $golden = new App('golden');
