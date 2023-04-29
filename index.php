@@ -38,6 +38,7 @@
     </ol>
 
     <h2>FirstClass example from includes folder</h2>
+    
     <?php
     echo "<hr>";
     echo "<h2>FirstClass Examples</h2>";
@@ -45,13 +46,27 @@
     include_once 'includes/FirstClass.php';
     ?>
 
+
+    <hr>
+
+    <h2>Constructs</h2>
+    <?php 
+    
+    ?>
+<!-- <script>
+    setTimeout(() => {
+        
+    }, timeout);
+</script> -->
+
+
     
     <?php 
         class Fruit{
             public $name;
             public $color;
 
-            function setName($name){
+            function __constuct($name){
                 $this->name= $name;
             }
 
@@ -62,20 +77,15 @@
 
         $apple = new Fruit();
         $banana = new Fruit();
-        $apple->setName('Apple');
-        $banana->setName('Banana');
-        
+
         echo $apple->getName();
         echo "<br>";
         echo $banana->getName();
     ?>
     
-
-<!-- <script>
-    setTimeout(() => {
-        
-    }, timeout);
-</script> -->
+    <h3>Coding Challange</h3>
+    <?php
     
+    ?>
 </body>
 </html>
