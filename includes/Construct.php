@@ -6,6 +6,10 @@ class App{
         $this->model=$model;
     }
 
+    function getModel(){
+        return $this->model;
+    }
+
 }
 
     
