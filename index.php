@@ -88,6 +88,7 @@
         include_once 'includes/Construct.php';
 
         echo $CM->getModel();
+        echo "<br>";
         echo $golden->getColor();
     ?>
 </body>
