@@ -13,4 +13,4 @@ class App{
 }
 
 $CM = new App();
-$CM->setName('CM');
+$CM->setModel('CM');

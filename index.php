@@ -86,6 +86,8 @@
     <h3>Coding Challange</h3>
     <?php
         include_once 'includes/Construct.php';
+
+        echo $CM->getModel();
     ?>
 </body>
 </html>
