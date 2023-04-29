@@ -26,4 +26,4 @@ $CM = new App();
 $CM->setModel('CM');
 
 $golden = new App();
-$CM->setColor('golden');
+$golden->setColor('golden');
